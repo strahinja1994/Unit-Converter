@@ -1,0 +1,136 @@
+.card-bottom {
+  margin-top: 31px;
+  padding: 45px 110px 75px 50px;
+
+  @include mobile {
+    padding: 35px 20px 45px 20px;
+    width: 100%;
+    order: 1;
+    margin-top: 10px;
+  }
+
+  @include tablet {
+    padding: 45px 0 75px 0;
+  }
+}
+
+.card-bottom__title {
+  color: $color3;
+  font-family: $FraBk;
+  font-weight: 600px;
+  font-size: 20px;
+
+  @include mobile {
+    text-align: center;
+  }
+
+  @include tablet {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+.card-bottom__button {
+  width: 84px;
+  height: 80px;
+  border-radius: 23px;
+  background-color: $color1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: auto;
+  transition: 0.5s ease;
+
+  &:hover {
+    box-shadow: none;
+    background-color: $color7;
+  }
+
+  i {
+    font-size: 35px;
+    color: $color2;
+  }
+
+  @include mobile {
+    width: 74px;
+    height: 68px;
+    border-radius: 18px;
+
+    i{
+      font-size: 28px;
+    }
+  }
+}
+
+.card-bottom__container {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+
+  @include mobile {
+    margin-top: 25px;
+    display:flex;
+    justify-content: center;
+  }
+
+  @include tablet {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.card-bottom__icon-wrapper {
+  display: flex;
+  max-width: 360px;
+  flex-wrap: wrap;
+
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    max-width: 300px;
+    gap:20px;
+    justify-content: center;
+  }
+}
+
+.card-bottom__img-container {
+  background-image: url(../images/circle-out.png);
+  width: 349.25px;
+  height: 256.06px;
+
+  @include mobile{
+    display: none;
+  }
+}
+
+.card-bottom__img-circle {
+  margin: 86px 0 0 111px;
+}
+
+.card-bottom__size-container {
+  width: 33.33%;
+}
+
+.card-bottom__text {
+  color: $color4;
+  text-align: center;
+  font-size: 15px;
+  font-family: $FraBk;
+  padding-top: 18px;
+
+  @include mobile {
+    padding-bottom: 10px;
+  }
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
+}
+
+.card-bottom__img-circle--rotate {
+  transform: rotate(360deg);
+  transition: 0.5s ease-in-out;
+}

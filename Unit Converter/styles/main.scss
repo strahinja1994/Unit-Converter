@@ -1,0 +1,99 @@
+@import "variables";
+@import "responsive";
+@import "reset";
+@import "background";
+@import "card";
+@import "card-top";
+@import "card-bot";
+@import "footer";
+
+
+main {
+  padding-top: 120px;
+  max-width: 980px;
+  margin: auto;
+  position: relative;
+  margin-bottom:88px;
+
+  @include mobile {
+    padding: 50px 10px 0;
+    margin-bottom:-4px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include tablet {
+    padding: 50px 20px 0;
+  }
+}
+
+.headline {
+  text-align: center;
+  color: $color1;
+}
+
+.headline__title {
+  font-family: $gothic;
+  font-size: 36px;
+  letter-spacing: 3px;
+
+  @include mobile {
+    font-size: 26px;
+  }
+}
+
+.headline__text {
+  font-family: $FraBk;
+  font-size: 14px;
+  max-width: 605px;
+  margin: 5px auto 25px;
+
+  @include mobile {
+    font-size: 12px;
+  }
+
+  @include tablet {
+    padding: 10px;
+  }
+}
+
+.robot-left {
+  position: absolute;
+  bottom: -35px;
+  left: -55px;
+
+  @include mobile {
+    position: static;
+    width: 100px;
+    margin: auto;
+    display: block;
+    order:4;
+  }
+
+  @include tablet {
+    position: absolute;
+    bottom: -40px;
+    left: 10px;
+  }
+}
+
+.robot-right {
+  position: absolute;
+  bottom: -35px;
+  right: -55px;
+
+  @include mobile {
+    position: static;
+    width: 110px;
+    margin:20px auto -4px;
+    display: block;
+    order:3;
+  }
+
+  @include tablet {
+    position: absolute;
+    bottom: -40px;
+    right: 10px;
+  }
+}
+

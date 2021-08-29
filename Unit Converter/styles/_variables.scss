@@ -1,0 +1,21 @@
+$color1: #f5f4f4;
+$color2: #3b00e1;
+$color3: #6c63ff;
+$color4: #908f9c;
+$color5: #ffffff;
+$color6: #c9c9c9;
+$color7: #e4e4e4;
+$color8: #2f2e41;
+//fonts
+@font-face {
+  font-family: Gothic;
+  src: url(../fonts/GOTHIC.TTF);
+}
+
+@font-face {
+  font-family: FraBk;
+  src: url(../fonts/FRABK.TTF);
+}
+
+$gothic: Gothic, sans-serif;
+$FraBk: FraBk, sans-serif;

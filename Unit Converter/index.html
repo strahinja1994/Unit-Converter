@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit converter</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+  <div class="background"> </div>
+  <main>
+
+    <div class="headline">
+      <h1 class="headline__title">
+        Units Converter
+      </h1>
+      <p class="headline__text">
+        Use this Conversion Calculator to convert between units. Select the current unit, the desired unit, and enter a
+        value to generate the resulting conversion.
+      </p>
+    </div>
+
+    <section class="card card-top card-top--active">
+
+      <div class="card-top__row1">
+        <div class="value">
+          <label class="value__label">Value:</label>
+          <input type="number" class="value__input" id="input">
+
+        </div>
+
+        <div class=" from">
+          <label class="from__label">From:</label>
+          <select class="from__select from__select-temperature">
+            <option value="celsius">Celsiuses(<span>&#8451;</span>)</option>
+            <option value="kelvin">Kelvins(<span>&#8490;)</option>
+            <option value="fahrenheit">Fahrenheits(<span>&#8457;</span>)</option>
+            <option value="reaumur">Reaumurs(°Re)</option>
+          </select>
+        </div>
+        <div class="card-top__icons">
+          <i class="fas fa-exchange-alt"></i>
+        </div>
+        <div class="to">
+          <label class="to__label">To:</label>
+          <select class="to__select to__select-temperature">
+            <option value="celsius">Celsiuses(<span>&#8451;</span>)</option>
+            <option value="kelvin">Kelvins(<span>&#8490;)</option>
+            <option value="fahrenheit">Fahrenheits(<span>&#8457;</span>)</option>
+            <option value="reaumur">Reaumurs(°Re)</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="card-top__row2">
+
+        <div class="result">
+          <label class="result__label">Result:</label>
+          <p class="result__output"></p>
+        </div>
+        <button class="card-top__button" id="btnTemperature">convert</button>
+
+      </div>
+
+    </section>
+
+    <section class="card card-top">
+
+      <div class="card-top__row1">
+        <div class="value">
+          <label class="value__label">Value:</label>
+          <input type="number" class="value__input">
+        </div>
+        <div class="from">
+          <label class="from__label">From:</label>
+          <select class="from__select from__select-length">
+            <option value="meter">Meters(m)</option>
+            <option value="inch">Inches(")</option>
+            <option value="yard">Yards(yd)</option>
+            <option value="foot">Feet(ft)</option>
+            <option value="mile">Miles(mi)</option>
+          </select>
+        </div>
+        <div class="card-top__icons">
+          <i class="fas fa-exchange-alt"></i>
+        </div>
+        <div class="to">
+          <label class="to__label">To:</label>
+          <select class="to__select to__select-length">
+            <option value="meter">Meters(m)</option>
+            <option value="inch">Inches(")</option>
+            <option value="yard">Yards(yd)</option>
+            <option value="foot">Feet(ft)</option>
+            <option value="mile">Miles(mi)</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="card-top__row2">
+
+        <div class="result">
+          <label class="result__label">Result:</label>
+          <p class="result__output"></p>
+        </div>
+        <button class="card-top__button" id="btnLength">convert</button>
+
+      </div>
+
+    </section>
+
+    <section class="card card-top">
+
+      <div class="card-top__row1">
+        <div class="value">
+          <label class="value__label">Value:</label>
+          <input type="number" class="value__input">
+        </div>
+
+        <div class="from">
+          <label class="from__label">From:</label>
+          <select class="from__select from__select-pressure">
+            <option value="pascal">Pascal(Pa)</option>
+            <option value="atm">Standard atmosphere(atm)</option>
+            <option value="bar">Bar(bar)</option>
+            <option value="torr">Torr(torr)</option>
+          </select>
+        </div>
+        <div class="card-top__icons">
+          <i class="fas fa-exchange-alt"></i>
+        </div>
+        <div class="to">
+          <label class="to__label">To:</label>
+          <select class="to__select to__select-pressure">
+            <option value="pascal">Pascal(Pa)</option>
+            <option value="atm">Standard atmosphere(atm)</option>
+            <option value="bar">Bar(bar)</option>
+            <option value="tor">Torr(torr)</option>
+          </select>
+        </div>
+
+      </div>
+
+
+
+      <div class="card-top__row2">
+
+        <div class="result">
+          <label class="result__label">Result:</label>
+          <p class="result__output"></p>
+        </div>
+        <button class="card-top__button" id="btnPressure">convert</button>
+
+      </div>
+
+    </section>
+
+    <section class="card card-top">
+
+      <div class="card-top__row1">
+        <div class="value">
+          <label class="value__label">Value:</label>
+          <input type="number" class="value__input">
+        </div>
+
+        <div class="from">
+          <label class="from__label">From:</label>
+          <select class="from__select from__select-time">
+            <option value="second" id="propo">Seconds(s)</option>
+            <option value="minute">Minutes(min)</option>
+            <option value="hour">Hours(h)</option>
+            <option value="day">Days(d)</option>
+          </select>
+        </div>
+        <div class="card-top__icons">
+          <i class="fas fa-exchange-alt"></i>
+        </div>
+        <div class="to">
+          <label class="to__label">To:</label>
+          <select class="to__select to__select-time">
+            <option value="second">Seconds(s)</option>
+            <option value="minute">Minutes(min)</option>
+            <option value="hour">Hours(h)</option>
+            <option value="day">Days(d)</option>
+          </select>
+        </div>
+
+      </div>
+
+
+
+      <div class="card-top__row2">
+
+        <div class="result">
+          <label class="result__label">Result:</label>
+          <p class="result__output"></p>
+        </div>
+        <button class="card-top__button" id="btnTime">convert</button>
+
+      </div>
+
+    </section>
+
+    <section class="card card-top">
+
+      <div class="card-top__row1">
+        <div class="value">
+          <label class="value__label">Value:</label>
+          <input type="number" class="value__input">
+        </div>
+
+        <div class="from">
+          <label class="from__label">From:</label>
+          <select class="from__select from__select-energy">
+            <option value="jules">Jules(J)</option>
+            <option value="cal">Calories(cal)</option>
+          </select>
+        </div>
+        <div class="card-top__icons">
+          <i class="fas fa-exchange-alt"></i>
+        </div>
+        <div class="to">
+          <label class="to__label">To:</label>
+          <select class="to__select to__select-energy">
+            <option value="jules">Jules(J)</option>
+            <option value="cal">Calories(cal)</option>
+          </select>
+        </div>
+
+      </div>
+
+
+
+      <div class="card-top__row2">
+
+        <div class="result">
+          <label class="result__label">Result:</label>
+          <p class="result__output"></p>
+        </div>
+        <button class="card-top__button" id="btnEnergy">convert</button>
+
+      </div>
+
+    </section>
+
+    <section class="card card-top">
+
+      <div class="card-top__row1">
+        <div class="value">
+          <label class="value__label">Value:</label>
+          <input type="number" class="value__input">
+        </div>
+
+        <div class="from">
+          <label class="from__label">From:</label>
+          <select class="from__select from__select-weight">
+            <option value="kilogram">Kilograms(kg)</option>
+            <option value="pound">Pounds(lb)</option>
+            <option value="ounce">Ounces(oz)</option>
+            <option value="tonne">Tonne(t)</option>
+          </select>
+        </div>
+        <div class="card-top__icons">
+          <i class="fas fa-exchange-alt"></i>
+        </div>
+        <div class="to">
+          <label class="to__label">To:</label>
+          <select class="to__select to__select-weight">
+            <option value="kilogram">Kilograms(kg)</option>
+            <option value="pound">Pounds(lb)</option>
+            <option value="ounce">Ounces(oz)</option>
+            <option value="tonne">Tonne(t)</option>
+          </select>
+        </div>
+
+      </div>
+
+
+
+      <div class="card-top__row2">
+
+        <div class="result">
+          <label class="result__label">Result:</label>
+          <p class="result__output"></p>
+        </div>
+        <button class="card-top__button" id="btnWeight">convert</button>
+
+      </div>
+
+    </section>
+
+    <section class="card card-bottom">
+      <h2 class="card-bottom__title">Select a size to convert</h2>
+      <div class="card-bottom__container">
+        <div class="card-bottom__icon-wrapper">
+          <div class="card-bottom__size-container">
+            <button class="card-bottom__button"><i class="fas fa-temperature-high"></i></button>
+            <p class="card-bottom__text">temperature</p>
+          </div>
+
+          <div class="card-bottom__size-container">
+            <button class="card-bottom__button"><i class="fas fa-ruler"></i></button>
+            <p class="card-bottom__text">length</p>
+          </div>
+
+          <div class="card-bottom__size-container">
+            <button class="card-bottom__button"><i class="fas fa-download"></i></button>
+            <p class="card-bottom__text">pressure</p>
+          </div>
+
+          <div class="card-bottom__size-container">
+            <button class="card-bottom__button"><i class="fas fa-history"></i></button>
+            <p class="card-bottom__text">time</p>
+          </div>
+
+          <div class="card-bottom__size-container">
+            <button class="card-bottom__button"><i class="fas fa-bolt"></i></button>
+            <p class="card-bottom__text">energy</p>
+          </div>
+
+          <div class="card-bottom__size-container">
+            <button class="card-bottom__button"><i class="fas fa-weight"></i></button>
+            <p class="card-bottom__text">weight</p>
+          </div>
+        </div>
+
+
+        <div class="card-bottom__img-container">
+          <img src="./images/circle.png" alt="" class="card-bottom__img-circle">
+        </div>
+      </div>
+    </section>
+
+    <img class="robot-right" src="./images/robot-right.png">
+    <img class="robot-left" src="./images/robot-left.png">
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p>© Strahinja&Danica All rights reserved </p>
+      <div>
+        <i class="fab fa-github"></i><a href="https://github.com/Danica212" class="footer__link">Danica212</a>
+        <i class="fab fa-github"></i><a href="https://github.com/strahinja1994" class="footer__link">strahinja1994</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="javascript/script.js"></script>
+</html>

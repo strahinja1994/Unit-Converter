@@ -1,0 +1,151 @@
+.card-top {
+  display: none;
+  padding: 80px 65px 52px 57px;
+
+  @include mobile {
+    padding: 30px 15px 30px 15px;
+    width: 100%;
+    order:2;
+    margin-top: 20px;
+  }
+
+  @include tablet {
+    padding: 50px 65px 52px 57px;
+  }
+  
+  label {
+    display: block;
+    color: $color3;
+    font-family: $FraBk;
+    font-size: 22px;
+    font-weight: 900;
+    padding-bottom: 5px;
+
+  @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  input,
+  select,
+  p {
+    border-radius: 12px;
+    color: $color4;
+    border: $color6 1px solid;
+    font-family: $FraBk;
+    font-size: 20px;
+    padding: 10px 20px;
+
+    &:focus{
+      outline:none;
+    }
+
+    @include mobile {
+      font-size: 17px;
+    }
+  }
+
+  select {
+    width: 183px;
+    height: 52px;
+    padding: 0 10px;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+}
+
+.card-top--active {
+  display: block;
+}
+
+.card-top__row1,
+.card-top__row2 {
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile{
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include tablet {
+      flex-wrap: wrap;
+  }
+}
+
+.card-top__row1 {
+  margin-bottom: 11px;
+}
+
+.from, .to{
+  @include tablet {
+    width: 40%;
+  }
+}
+
+.value, .result{
+  @include tablet {
+    width: 100%;
+    margin:15px 0;
+  }
+}
+
+.result__output,
+.value__input {
+  width: 382px;
+  height: 52px;
+
+  @include mobile{
+    width: 100%;
+  }
+
+  @include tablet{
+    width: 100%;
+    flex-shrink: 0;
+  }
+}
+
+.card-top__icons {
+  font-size: 37px;
+  color: $color3;
+  align-self: flex-end;
+
+  @include mobile {
+    align-self: center;
+    transform: rotate(90deg);
+    font-size: 25px;
+    margin-top: 10px;
+  }
+}
+
+.card-top__button {
+  color: $color6;
+  background: $color2;
+  width: 147px;
+  height: 52px;
+  font-family: $FraBk;
+  font-size: 22px;
+  font-weight: 900;
+  border-radius: 12px;
+  align-self: flex-end;
+  transition: 0.5s ease;
+
+  &:hover{
+    background-color: $color3;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  @include tablet{
+    width: 100%;
+  }
+}

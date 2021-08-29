@@ -1,0 +1,42 @@
+.footer {
+    background-color: $color8;
+    font-family: $FraBk;
+    font-size: 12px;
+    color: $color1;
+    padding: 25px 60px;
+
+    @include mobile {
+      padding: 25px 10px;
+    }
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: auto;
+
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    i {
+      display: inline-block;
+      font-size: 18px;
+      padding: 0 5px 0 10px;
+
+      @include mobile {
+        margin-top: 10px;
+      }
+    }
+  }
+  
+  .footer__link {
+    font-family: $FraBk;
+    font-size: 12px;
+    color: $color1;
+    cursor: pointer;
+  }
