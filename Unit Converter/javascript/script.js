@@ -325,7 +325,7 @@ function convertWeight () {
     }
     outputWeight.innerHTML = result;
 }
-btnWeight.addEventListener('clcik', convertWeight);
+btnWeight.addEventListener('click', convertWeight);
 
 
 // size selector
